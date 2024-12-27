@@ -56,7 +56,7 @@ public class Bus {
 	private String email;
 	
 	@NotBlank(message = "Bus-Type Should Be Empty")
-	@Pattern(regexp = "[Ac-Sleeper,Ac-Non-sleeper,NonAc-Sleeper,NonAc-Non-sleeper]")
+	
 	private String busType;
 	
 	@ElementCollection
