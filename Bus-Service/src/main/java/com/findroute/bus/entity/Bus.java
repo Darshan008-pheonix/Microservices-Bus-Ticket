@@ -29,7 +29,7 @@ public class Bus {
 	
 	
 	@Id
-	private String busid;
+	private String busid;// autogenerate
 	
 	@NotBlank(message = "Company Name Should Be Empty")
 	private String company;

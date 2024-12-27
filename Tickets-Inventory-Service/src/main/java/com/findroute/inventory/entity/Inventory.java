@@ -21,10 +21,10 @@ public class Inventory {
 
 	@Id
 	private String travelingid;
-	private String Soruce;
+	private String source;
 	private String destination;
 	@ElementCollection
-	private List<String> Stops;
+	private List<String> stops;
 	@JsonFormat(pattern = "yyyy-MM-DD")
 	private LocalDate fromdate;
 	@JsonFormat(pattern = "yyyy-MM-DD")

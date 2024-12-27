@@ -12,15 +12,15 @@ public record InventoryDto(
     String source,
     String destination,
     List<String> stops,
-    @JsonFormat(pattern = "yyyy-MM-dd") LocalDate fromDate,
-    @JsonFormat(pattern = "yyyy-MM-dd") LocalDate toDate,
-    String busId,
-    String driverName,
-    String phNo,
+    @JsonFormat(pattern = "yyyy-MM-dd") LocalDate fromdate,
+    @JsonFormat(pattern = "yyyy-MM-dd") LocalDate todate,
+    String busid,
+    String drivername,
+    String phno,
     Integer seats,
     Double price,
-    @JsonFormat(pattern = "hh:mm a") LocalTime departureTime,
-    @JsonFormat(pattern = "hh:mm a") LocalTime arrivalTime
+    @JsonFormat(pattern = "hh:mm a") LocalTime departuretime,
+    @JsonFormat(pattern = "hh:mm a") LocalTime arrivaltime
 ) {
     public Inventory toEntity() {
         return new Inventory(
@@ -28,15 +28,15 @@ public record InventoryDto(
             source,
             destination,
             stops,
-            fromDate,
-            toDate,
-            busId,
-            driverName,
-            phNo,
+            fromdate,
+            todate,
+            busid,
+            drivername,
+            phno,
             seats,
             price,
-            departureTime,
-            arrivalTime
+            departuretime,
+            arrivaltime
         );
     }
 }
