@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.findroute.book.dto.BookingDto;
 import com.findroute.book.service.IBookingService;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
 @RestController
 @RequestMapping("booking")
 public class BookingController {

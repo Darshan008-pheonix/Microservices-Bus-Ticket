@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.findroute.book.dto.ResponseStructure;
 
-@FeignClient(url = "http://localhost:8083",value = "Tickets-Inventory-Service",name = "Tickets-Inventory-Service")
+@FeignClient(value = "Tickets-Inventory-Service",name = "Tickets-Inventory-Service",
+fallback = InventoryClientFallBack.class)
 public interface InventoryClient {
 
 	@RequestMapping(method = RequestMethod.GET,value="/inventory/validate")
